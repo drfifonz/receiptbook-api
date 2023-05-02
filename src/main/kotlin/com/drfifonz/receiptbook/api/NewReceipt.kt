@@ -1,16 +1,12 @@
-package com.drfifonz.receiptbook.domain
+package com.drfifonz.receiptbook.api
 
-import java.time.Instant
 
-data class Receipt(
-        val id: String? = null,
+
+data class NewReceipt(
+        val title:String,
         val ingredients: List<Ingredient>,
         val steps: List<Step>,
-        val title: String,
         val tags: List<String>,
-        val createdAt: Instant? = null,
-        val modifiedAt: Instant? = null,
-
 )
 
 data class Step(
